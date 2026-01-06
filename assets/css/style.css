@@ -16,6 +16,10 @@ html {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
+html,
+body {
+  overflow-x: hidden;
+}
 body {
   background: #cbdcf7;
   font-family: "Poppins", sans-serif;
@@ -79,8 +83,9 @@ section {
 }
 .heading {
   font-size: 3.5rem;
-  color: rgb(32, 32, 32);
+  color: black;
   font-weight: 800;
+  padding-top: 40px;
   text-align: center;
 }
 .heading span {
