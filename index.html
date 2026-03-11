@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="keywords"
-      content="Pragati sable, portfolio, Pragati, full stack dev, personal portfolio lifecodes, portfolio design, portfolio website, personal portfolio"
+      content="Rakibul Islam Roky, portfolio, frontend developer, MERN stack developer, web developer, personal portfolio, portfolio website"
     />
     <meta
       name="description"
-      content="Welcome to Pragati's Portfolio. Full-Stack Web Developer"
+      content="Welcome to Rakibul Islam Roky's portfolio. Frontend specialist and MERN Stack developer."
     />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./assets/css/style.css" />
@@ -22,10 +22,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <script
-      src="https://kit.fontawesome.com/95a2002ecf.js"
-      crossorigin="anonymous"
-    ></script>
     <!-- Favicon -->
     <link
       id="favicon"
@@ -33,17 +29,16 @@
       href="./assets/images/favicon.png"
       type="image/png"
     />
-    />
     <title>Portfolio | Roky18</title>
   </head>
   <body>
     <header>
       <a href="https://roky18.github.io/Protfolieo/" class="logo"
-        ><i class="fa-solid fa-code"></i> Roky18</a
+        ><i class="fas fa-code"></i> Roky18</a
       >
 
       <div id="menu" class="fas fa-bars"></div>
-      <nav class="navbar">
+      <nav class="navbar" aria-label="Primary">
         <ul>
           <li><a class="active" href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
@@ -51,22 +46,24 @@
           <li><a href="#education">Education</a></li>
           <li><a href="#work">Work</a></li>
           <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
     <!-- navbar ends -->
 
-    <!-- hero section starts -->
-    <section class="home" id="home">
+    <main>
+      <!-- hero section starts -->
+      <section class="home" id="home">
       <div id="particles-js"></div>
 
       <div class="content">
-        <h2>
+        <h1>
           <br />
           Assalamuolaikum,<br />
           I'm MD RAKIBUL ISLAM ROKY <span></span>
-        </h2>
-        <p>i am into <span class="typing-text"></span></p>
+        </h1>
+        <p>I am into <span class="typing-text"></span></p>
         <a href="#about" class="btn"
           ><span>About Me</span>
           <i class="fas fa-arrow-circle-down"></i>
@@ -79,6 +76,7 @@
                 aria-label="Facebook"
                 href="https://facebook.com/rokymax626"
                 target="_blank"
+                rel="noopener noreferrer"
                 ><i class="fab fa-facebook"></i
               ></a>
             </li>
@@ -87,7 +85,9 @@
                 class="instagram"
                 aria-label="Instagram"
                 href="https://www.instagram.com/rokymax626/"
-                ><i class="fab fa-instagram" target="_blank"></i
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fab fa-instagram"></i
               ></a>
             </li>
             <li>
@@ -96,6 +96,7 @@
                 aria-label="LinkedIn"
                 href="https://linkedin.com/in/roky18"
                 target="_blank"
+                rel="noopener noreferrer"
                 ><i class="fab fa-linkedin"></i
               ></a>
             </li>
@@ -105,6 +106,7 @@
                 aria-label="Twitter"
                 href="https://x.com/rokymax626"
                 target="_blank"
+                rel="noopener noreferrer"
                 ><i class="fab fa-twitter"></i
               ></a>
             </li>
@@ -114,6 +116,7 @@
                 aria-label="Github"
                 href="https://github.com/roky18"
                 target="_blank"
+                rel="noopener noreferrer"
                 ><i class="fab fa-github"></i
               ></a>
             </li>
@@ -123,10 +126,10 @@
       <div class="image">
         <img
           draggable="false"
-          class="tilt"
+          class="hero-photo"
           src="./assets/images/personal.jpg"
-          alt=""
-          height=""
+          alt="Portrait of Rakibul Islam Roky"
+          loading="lazy" decoding="async"
         />
       </div>
     </section>
@@ -144,7 +147,8 @@
             draggable="false"
             class="tilt"
             src="./assets/images/profile1.png"
-            alt=""
+            alt="Rakibul Islam Roky profile photo"
+            loading="lazy" decoding="async"
           />
         </div>
         <div class="content">
@@ -153,9 +157,10 @@
 
           <p>
             Assalamuolaikum!! I'm Rakibul Islam Roky, a passionate Frontend
-            Specialist and MERN Stack Developer. I help businesses, startups,
-            and clients bring their web ideas to life with modern, responsive,
-            and high-performance applications.
+            Specialist and MERN Stack Developer. I focus on building clean,
+            responsive, and user-friendly web experiences with modern tools and
+            best practices. I enjoy turning ideas into fast, accessible, and
+            reliable products that help businesses and clients grow.
           </p>
 
           <div class="box-container">
@@ -173,6 +178,7 @@
             <a
               href="https://drive.google.com/file/d/1EBAFNbrPrNtv0jRqwkCJxTmqGvNxzJwL/view"
               target="_blank"
+              rel="noopener noreferrer"
               class="btn"
             >
               <span>Resume</span>
@@ -192,23 +198,6 @@
 
       <div class="container">
         <div class="row" id="skillsContainer">
-          <div class="bar">
-            <div class="info">
-              <img src="./assets/images/skills/TailwindCSS.png" />
-              <span>TailwindCSS</span>
-            </div>
-          </div>
-          <div class="bar">
-            <div class="info">
-              <img
-                src="./assets/images/skills/icons8-react-100.png"
-                height="50"
-                width="50"
-              />
-              <span>ReactJS</span>
-            </div>
-          </div>
-
           <div class="bar">
             <div class="info">
               <svg
@@ -264,6 +253,8 @@
                 src="./assets/images/skills/css.png"
                 height="50"
                 width="50"
+                alt="CSS"
+                loading="lazy" decoding="async"
               />
               <span>CSS</span>
             </div>
@@ -274,17 +265,90 @@
                 src="./assets/images/skills/javascript.png"
                 height="50"
                 width="50"
+                alt="JavaScript"
+                loading="lazy" decoding="async"
               />
               <span>JavaScript</span>
             </div>
           </div>
-
+          <div class="bar">
+            <div class="info">
+              <img
+                src="./assets/images/skills/icons8-react-100.png"
+                height="50"
+                width="50"
+                alt="React"
+                loading="lazy" decoding="async"
+              />
+              <span>ReactJS</span>
+            </div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <img
+                src="./assets/images/skills/nodejs.png"
+                height="50"
+                width="50"
+                alt="Node.js"
+                loading="lazy" decoding="async"
+              />
+              <span>NodeJS</span>
+            </div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <img
+                src="./assets/images/skills/mongodb.png"
+                height="50"
+                width="50"
+                alt="MongoDB"
+                loading="lazy" decoding="async"
+              />
+              <span>MongoDB</span>
+            </div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <img
+                src="./assets/images/skills/nextjs.png"
+                height="50"
+                width="50"
+                alt="Next.js"
+                loading="lazy" decoding="async"
+              />
+              <span>NEXTjs</span>
+            </div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <img
+                src="./assets/images/skills/TailwindCSS.png"
+                alt="Tailwind CSS"
+                loading="lazy" decoding="async"
+              />
+              <span>TailwindCSS</span>
+            </div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <img
+                src="./assets/images/skills/icons8-github-50.png"
+                height="50"
+                width="50"
+                alt="Git"
+                loading="lazy" decoding="async"
+              />
+              <span>Git</span>
+            </div>
+          </div>
           <div class="bar">
             <div class="info">
               <img
                 src="./assets/images/skills/github.png"
                 height="50"
                 width="50"
+                alt="GitHub"
+                loading="lazy" decoding="async"
               />
               <span>GitHub</span>
             </div>
@@ -295,40 +359,10 @@
                 src="./assets/images/skills/firebase.png"
                 height="50"
                 width="50"
+                alt="Firebase"
+                loading="lazy" decoding="async"
               />
               <span>Firebase</span>
-            </div>
-          </div>
-          <div class="bar">
-            <div class="info">
-              <img
-                src="./assets/images/skills/nodejs.png"
-                height="50"
-                width="50"
-              />
-              <span>NodeJS</span>
-            </div>
-          </div>
-
-          <div class="bar">
-            <div class="info">
-              <img
-                src="./assets/images/skills/mongodb.png"
-                height="50"
-                width="50"
-              />
-              <span>MongoDB</span>
-            </div>
-          </div>
-
-          <div class="bar">
-            <div class="info">
-              <img
-                src="./assets/images/skills/nextjs.png"
-                height="50"
-                width="50"
-              />
-              <span>NEXTjs</span>
             </div>
           </div>
           <div class="bar">
@@ -337,12 +371,13 @@
                 src="./assets/images/skills/vercel.png"
                 height="50"
                 width="50"
+                alt="Vercel"
+                loading="lazy" decoding="async"
               />
               <span>Vercel</span>
             </div>
           </div>
-        </div>
-      </div>
+        </div>      </div>
     </section>
     <!-- skills section ends -->
 
@@ -363,7 +398,8 @@
             <img
               draggable="false"
               src="./assets/images/educat/masamad.jpg"
-              alt=""
+              alt="Sujanagar Model Pilot High School"
+              loading="lazy" decoding="async"
             />
           </div>
           <div class="content">
@@ -377,7 +413,8 @@
             <img
               draggable="false"
               src="./assets/images/educat/national.jpg"
-              alt=""
+              alt="Pabna Polytechnic Institute"
+              loading="lazy" decoding="async"
             />
           </div>
           <div class="content">
@@ -401,7 +438,8 @@
           <img
             draggable="false"
             src="./assets/images/projects/portfolio.png"
-            alt=""
+            alt="Portfolio website project screenshot"
+            loading="lazy" decoding="async"
           />
           <div class="content">
             <div class="tag">
@@ -409,17 +447,18 @@
             </div>
             <div class="desc">
               <p>
-                Personal portfolio website. Don't need much info about it, just
-                scroll down. You're here only!
+                Personal portfolio showcasing projects, skills, and contact
+                details with a clean, responsive layout.
               </p>
               <div class="btns">
                 <a
                   href="https://roky18.github.io/Protfolieo/"
                   class="btn"
                   target="_blank"
+                  rel="noopener noreferrer"
                   ><i class="fas fa-eye"></i> View</a
                 >
-                <a href="#" class="btn" target="_blank"
+                <a href="#" class="btn" target="_blank" rel="noopener noreferrer"
                   >Code <i class="fas fa-code"></i
                 ></a>
               </div>
@@ -430,7 +469,8 @@
           <img
             draggable="false"
             src="./assets/images/projects/dll.png"
-            alt=""
+            alt="Digital-life-lessons project screenshot"
+            loading="lazy" decoding="async"
           />
           <div class="content">
             <div class="tag">
@@ -443,12 +483,14 @@
                   href="https://digital-life-lessons-ef218.web.app/"
                   class="btn"
                   target="_blank"
+                  rel="noopener noreferrer"
                   ><i class="fas fa-eye"></i> View</a
                 >
                 <a
                   href="https://github.com/roky18/digital-life-lessons-clint.git"
                   class="btn"
                   target="_blank"
+                  rel="noopener noreferrer"
                   >Code <i class="fas fa-code"></i
                 ></a>
               </div>
@@ -459,7 +501,8 @@
           <img
             draggable="false"
             src="./assets/images/projects/gsp.png"
-            alt=""
+            alt="Green-spot project screenshot"
+            loading="lazy" decoding="async"
           />
           <div class="content">
             <div class="tag">
@@ -472,12 +515,14 @@
                   href="https://green-spot-5c3f7.web.app/"
                   class="btn"
                   target="_blank"
+                  rel="noopener noreferrer"
                   ><i class="fas fa-eye"></i> View</a
                 >
                 <a
                   href="https://github.com/roky18/green-spot-clint.git"
                   class="btn"
                   target="_blank"
+                  rel="noopener noreferrer"
                   >Code <i class="fas fa-code"></i
                 ></a>
               </div>
@@ -485,7 +530,12 @@
           </div>
         </div>
         <div class="box tilt">
-          <img draggable="false" src="./assets/images/projects/gh.png" alt="" />
+          <img
+            draggable="false"
+            src="./assets/images/projects/gh.png"
+            alt="Game-hub project screenshot"
+            loading="lazy" decoding="async"
+          />
           <div class="content">
             <div class="tag">
               <h3>Game-hub</h3>
@@ -497,9 +547,10 @@
                   href=" https://game-hub-dc511.web.app"
                   class="btn"
                   target="_blank"
+                  rel="noopener noreferrer"
                   ><i class="fas fa-eye"></i> View</a
                 >
-                <a href="#" class="btn" target="_blank"
+                <a href="#" class="btn" target="_blank" rel="noopener noreferrer"
                   >Code <i class="fas fa-code"></i
                 ></a>
               </div>
@@ -510,7 +561,8 @@
           <img
             draggable="false"
             src="./assets/images/projects/itb.png"
-            alt=""
+            alt="Item-Box project screenshot"
+            loading="lazy" decoding="async"
           />
           <div class="content">
             <div class="tag">
@@ -523,12 +575,14 @@
                   href="https://item-box-pearl.vercel.app"
                   class="btn"
                   target="_blank"
+                  rel="noopener noreferrer"
                   ><i class="fas fa-eye"></i> View</a
                 >
                 <a
                   href="https://github.com/roky18/item-box"
                   class="btn"
                   target="_blank"
+                  rel="noopener noreferrer"
                   >Code <i class="fas fa-code"></i
                 ></a>
               </div>
@@ -539,7 +593,8 @@
           <img
             draggable="false"
             src="./assets/images/projects/zsp.png"
-            alt=""
+            alt="Zaf-shift project screenshot"
+            loading="lazy" decoding="async"
           />
           <div class="content">
             <div class="tag">
@@ -552,12 +607,14 @@
                   href="https://zaf-shift-clint.web.app/"
                   class="btn"
                   target="_blank"
+                  rel="noopener noreferrer"
                   ><i class="fas fa-eye"></i> View</a
                 >
                 <a
                   href="https://github.com/roky18/zaf-shift-clint.git"
                   class="btn"
                   target="_blank"
+                  rel="noopener noreferrer"
                   >Code <i class="fas fa-code"></i
                 ></a>
               </div>
@@ -638,6 +695,78 @@
     </section>
     <!-- experience section ends -->
 
+    <!-- contact section starts -->
+    <section class="contact" id="contact">
+      <h2 class="heading">
+        <i class="fas fa-headset"></i> Contact <span>Me</span>
+      </h2>
+
+      <div class="container">
+        <div class="content">
+          <div class="image-box">
+            <img
+              draggable="false"
+              src="./assets/images/personal.jpg"
+              alt="Contact illustration"
+              loading="lazy" decoding="async"
+            />
+          </div>
+          <form
+            id="contact-form"
+            action="https://formspree.io/f/maqpobaj"
+            method="POST"
+            aria-label="Contact form"
+          >
+            <div class="form-group">
+              <div class="field">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your Name"
+                  required
+                />
+                <i class="fas fa-user"></i>
+              </div>
+              <div class="field">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your Email"
+                  required
+                />
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="field">
+                <input
+                  type="text"
+                  name="subject"
+                  placeholder="Subject"
+                  required
+                />
+                <i class="fas fa-tag"></i>
+              </div>
+              <div class="message">
+                <textarea
+                  name="message"
+                  placeholder="Your Message"
+                  required
+                ></textarea>
+                <i class="fas fa-comment-dots"></i>
+              </div>
+              <div class="button-area">
+                <button type="submit">
+                  Send Message <i class="fas fa-paper-plane"></i>
+                </button>
+                <span></span>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- contact section ends -->
+    </main>
+
     <!-- footer section starts -->
     <section class="footer">
       <div class="box-container">
@@ -647,9 +776,9 @@
             Thank you so much for visiting my personal portfolio! I truly
             appreciate your interest in my work and the time you took to explore
             my projects and skills. <br /><br />
-            I’d love to stay connected — follow me on socials, send a message,
+            I'd love to stay connected — follow me on socials, send a message,
             or reach out anytime for collaborations, feedback, or just to say
-            hi! 🚀 Let’s create something amazing together.
+            hi! 🆗 Let's create something amazing together.
           </p>
         </div>
 
@@ -667,6 +796,9 @@
           <a href="#experience"
             ><i class="fas fa-chevron-circle-right"></i> Experience</a
           >
+          <a href="#contact"
+            ><i class="fas fa-chevron-circle-right"></i> Contact</a
+          >
         </div>
 
         <div class="box">
@@ -680,26 +812,31 @@
               aria-label="Facebook"
               href="https://facebook.com/rokymax626"
               target="_blank"
+              rel="noopener noreferrer"
               ><i class="fab fa-facebook"></i
             ></a>
             <a
               class="instagram"
               aria-label="Instagram"
               href="https://www.instagram.com/rokymax626/"
-              ><i class="fab fa-instagram" target="_blank"></i
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fab fa-instagram"></i
             ></a>
             <a
               class="linkedin"
               aria-label="LinkedIn"
               href="https://linkedin.com/in/roky18"
               target="_blank"
+              rel="noopener noreferrer"
               ><i class="fab fa-linkedin"></i
             ></a>
             <a
               class="twitter"
               aria-label="twitter"
-              href="https://twitter.com/rokymax626"
+              href="https://x.com/rokymax626"
               target="_blank"
+              rel="noopener noreferrer"
               ><i class="fab fa-twitter"></i
             ></a>
             <a
@@ -707,16 +844,17 @@
               aria-label="GitHub"
               href="https://github.com/roky18"
               target="_blank"
+              rel="noopener noreferrer"
               ><i class="fab fa-github"></i
             ></a>
           </div>
         </div>
       </div>
 
-      <h1 class="credit">
+      <p class="credit">
         Designed & Developed <i class="fa fa-heart pulse"></i> by
         <a href="https://linkedin.com/in/roky18"> Roky18</a>
-      </h1>
+      </p>
     </section>
     <!-- footer section ends -->
 
@@ -747,7 +885,7 @@
     ></script>
 
     <!-- particle.js links -->
-    <script src="./assets/js/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script src="./assets/js/app.js"></script>
 
     <!-- vanilla tilt.js links -->
@@ -760,11 +898,6 @@
 
     <!-- scroll reveal anim -->
     <script src="https://unpkg.com/scrollreveal"></script>
-
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
-    ></script>
 
     <!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
 
