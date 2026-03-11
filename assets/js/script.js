@@ -1,4 +1,23 @@
 $(document).ready(function () {
+  const themeToggle = document.getElementById("theme-toggle");
+  const storedTheme = localStorage.getItem("theme");
+  if (storedTheme === "dark") {
+    document.body.classList.add("dark");
+    if (themeToggle) {
+      themeToggle.setAttribute("aria-pressed", "true");
+      themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+    }
+  }
+  if (themeToggle) {
+    themeToggle.addEventListener("click", function () {
+      const isDark = document.body.classList.toggle("dark");
+      localStorage.setItem("theme", isDark ? "dark" : "light");
+      themeToggle.setAttribute("aria-pressed", isDark ? "true" : "false");
+      themeToggle.innerHTML = isDark
+        ? '<i class="fas fa-sun"></i>'
+        : '<i class="fas fa-moon"></i>';
+    });
+  }
   $("#menu").click(function () {
     $(this).toggleClass("fa-times");
     $(".navbar").toggleClass("nav-toggle");
